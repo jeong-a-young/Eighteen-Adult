@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/splash_image_background" />
+    <item android:drawable="@drawable/splash_text_subtitle" android:width="900dp" android:height="85dp" android:top="2570dp" android:left="400dp" />
+    <item android:drawable="@drawable/splash_text_title" android:width="1000dp" android:height="200dp" android:top="2700dp" android:left="350dp" />
+</layer-list>
