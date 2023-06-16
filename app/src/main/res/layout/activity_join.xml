@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".join.JoinActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/join_image_background" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="반가워요, 사용자1님!"
+            android:textSize="24sp"
+            android:layout_marginTop="129dp"
+            android:layout_marginLeft="32dp"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="열여덟 어른은 보호 종료 아동과"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="32dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="보호 종료 예정 아동에게"
+            android:layout_marginLeft="32dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다양한 서비스와 정보를 제공하는 앱입니다."
+            android:layout_marginLeft="32dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="현재 보호 종료 아동이시거나"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="32dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="보호 종료 예정 아동이신가요?"
+            android:layout_marginLeft="32dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="128dp" >
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="364dp"
+                android:layout_height="58dp"
+                android:background="@drawable/green_radious_opacity_btn"
+                android:text="네, 맞습니다."
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="364dp"
+                android:layout_height="58dp"
+                android:background="@drawable/white_radious_opacity_btn"
+                android:text="아닙니다."
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="21dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
