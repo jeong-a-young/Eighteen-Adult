@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.HomeFragment">
+    tools:context=".home.HomeFragment"
+    android:background="#F4F4F4" >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,59 +17,234 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans_bold"
+                android:text="열여덟 어른"
+                android:textColor="#B5B5B5"
+                android:textSize="20sp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="24dp" />
+
             <LinearLayout
+                android:layout_width="394dp"
+                android:layout_height="85dp"
+                android:orientation="horizontal"
+                android:background="@drawable/white_radious_layout"
+                android:layout_gravity="center"
+                android:layout_marginTop="22dp" >
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="보호 종료 확인서"
+                    android:textColor="#2F2F2F"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="31dp"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/main_icon_arrow_right_gray"
+                    android:layout_marginRight="33dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="247dp"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp" >
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/mapView"
+                    android:layout_width="394dp"
+                    android:layout_height="243dp"
+                    android:layout_gravity="center" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="29dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="272dp"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:text="지도"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp" />
 
                     <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:src="@drawable/main_image_info_1" />
+                        android:id="@+id/imageView6"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/main_icon_arrow_right_white" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="394dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/white_radious_layout"
+                android:layout_gravity="center"
+                android:layout_marginTop="19dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/noto_sans_bold"
+                        android:text="정보"
+                        android:textColor="#2F2F2F"
+                        android:textSize="22sp"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginLeft="31dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/main_icon_arrow_right_gray"
+                        android:layout_marginTop="33dp"
+                        android:layout_marginRight="33dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="34dp" >
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/textView17"
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/home_image_info_1"
+                            android:layout_marginLeft="31dp" />
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/noto_sans"
-                            android:text="어린이재단"
-                            android:textColor="#8F8F8F"
-                            android:textSize="12sp" />
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="19dp" >
 
-                        <TextView
-                            android:id="@+id/textView16"
-                            android:layout_width="match_parent"
+                            <TextView
+                                android:id="@+id/textView19"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/noto_sans"
+                                android:text="어린이재단"
+                                android:textColor="#8F8F8F"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textView18"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/noto_sans"
+                                android:text="초록재단"
+                                android:textColor="#000000"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/noto_sans"
-                            android:text="초록재단"
-                            android:textColor="#000000"
-                            android:textSize="18sp" />
+                            android:text="더보기"
+                            android:layout_marginRight="34dp" />
+
                     </LinearLayout>
-
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="더보기" />
-
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="34dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="45dp" >
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/home_image_info_2"
+                            android:layout_marginLeft="31dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="19dp" >
+
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/noto_sans"
+                                android:text="다시 태어나다,"
+                                android:textColor="#8F8F8F"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/noto_sans"
+                                android:text="브라더스키퍼"
+                                android:textColor="#000000"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="더보기"
+                            android:layout_marginRight="34dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="177dp" />
+                android:layout_height="177dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="24dp" />
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

@@ -17,51 +17,58 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <FrameLayout
+            android:id="@+id/frameLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
         </FrameLayout>
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tablayout"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="73dp"
-            android:background="@drawable/tab_layout"
-            app:tabIndicatorColor="#ffffff"
-            app:tabSelectedTextColor="#327D52"
-            app:tabTextAppearance="@style/TablayoutText"
-            app:tabTextColor="#AFAFAF">
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_radious_shadow" >
 
-            <com.google.android.material.tabs.TabItem
-                android:id="@+id/tab_home"
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:icon="@drawable/main_icon_home"
-                android:text="홈" />
+                android:layout_height="73dp"
+                android:background="@drawable/tab_white_radious_layout"
+                app:tabIndicatorColor="#ffffff"
+                app:tabSelectedTextColor="#327D52"
+                app:tabTextAppearance="@style/TablayoutText"
+                app:tabTextColor="#AFAFAF">
 
-            <com.google.android.material.tabs.TabItem
-                android:id="@+id/tab_community"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:icon="@drawable/main_icon_map"
-                android:text="지도" />
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:icon="@drawable/main_icon_home"
+                    android:text="홈" />
 
-            <com.google.android.material.tabs.TabItem
-                android:id="@+id/tab_report"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:icon="@drawable/main_icon_info"
-                android:text="정보" />
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_community"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:icon="@drawable/main_icon_map"
+                    android:text="지도" />
 
-            <com.google.android.material.tabs.TabItem
-                android:id="@+id/tab_more"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:icon="@drawable/main_icon_user"
-                android:text="내 정보" />
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:icon="@drawable/main_icon_info"
+                    android:text="정보" />
 
-        </com.google.android.material.tabs.TabLayout>
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:icon="@drawable/main_icon_user"
+                    android:text="내 정보" />
+
+            </com.google.android.material.tabs.TabLayout>
+        </FrameLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
