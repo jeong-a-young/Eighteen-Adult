@@ -1,14 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".information.InformationFragment">
+    tools:context=".information.InformationFragment"
+    android:background="#ffffff" >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_back_black"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="29dp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/noto_sans_bold"
+                android:text="정보"
+                android:textColor="#202020"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="364dp"
+                android:layout_height="182dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/information_image_banner" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/noto_sans_bold"
+                android:text="스무 살 함께 서기"
+                android:textColor="#202020"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="72dp"
+                android:layout_marginBottom="34dp"
+                android:text="초록우산어린이재단의 [자립준비청년(보호종료아동) 지원 캠페인] 스무 살 함께 서기는... 더보기 "
+                android:textColor="#A6A6A6" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tab_white_radious_layout"
+                app:tabIndicatorColor="#000000"
+                app:tabSelectedTextColor="#000000"
+                app:tabTextColor="#989898">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_community"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="보호시설" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="청년일자리" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="정보 지원" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_information"
+                android:layout_width="match_parent"
+                android:layout_height="396dp" />
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
