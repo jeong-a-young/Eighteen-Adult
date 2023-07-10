@@ -78,7 +78,7 @@
                 android:id="@+id/button6"
                 android:layout_width="119dp"
                 android:layout_height="42dp"
-                android:background="@drawable/green_radious_15dp_btn"
+                android:background="@drawable/green_radius_15dp_btn"
                 android:text="공유하기"
                 android:textColor="#FFFFFF"
                 android:layout_gravity="center" />

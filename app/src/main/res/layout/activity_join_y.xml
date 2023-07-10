@@ -16,11 +16,12 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="129dp"
             android:fontFamily="@font/noto_sans_bold"
             android:text="반가워요, 사용자1님!"
-            android:textSize="24sp"
-            android:layout_marginTop="129dp"
-            android:layout_marginLeft="32dp"/>
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView9"
@@ -28,7 +29,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="32dp"
-            android:text="그렇다면 보호 종료 확인서를 소지하고 계신가요?" />
+            android:fontFamily="@font/noto_sans"
+            android:text="그렇다면 보호 종료 확인서를 소지하고 계신가요?"
+            android:textColor="#ffffff" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,7 +44,8 @@
                 android:id="@+id/button"
                 android:layout_width="364dp"
                 android:layout_height="58dp"
-                android:background="@drawable/green_radious_opacity_btn"
+                android:background="@drawable/green_radius_opacity_btn"
+                android:fontFamily="@font/noto_sans"
                 android:text="네, 있습니다."
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF" />
@@ -50,11 +54,12 @@
                 android:id="@+id/button1"
                 android:layout_width="364dp"
                 android:layout_height="58dp"
-                android:background="@drawable/white_radious_opacity_btn"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/white_radius_opacity_btn"
+                android:fontFamily="@font/noto_sans"
                 android:text="없습니다."
                 android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:layout_marginTop="21dp" />
+                android:textColor="#FFFFFF" />
         </LinearLayout>
 
     </LinearLayout>

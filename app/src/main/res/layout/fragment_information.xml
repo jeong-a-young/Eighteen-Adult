@@ -69,7 +69,7 @@
                 android:id="@+id/tabLayout"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:background="@drawable/tab_white_radious_layout"
+                android:background="@drawable/tab_white_radius_layout"
                 app:tabIndicatorColor="#000000"
                 app:tabSelectedTextColor="#000000"
                 app:tabTextColor="#989898">

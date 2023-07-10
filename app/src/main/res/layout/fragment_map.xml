@@ -58,7 +58,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="260dp"
                     android:layout_gravity="bottom"
-                    android:background="@drawable/tab_white_radious_layout"
+                    android:background="@drawable/tab_white_radius_layout"
                     android:gravity="bottom"
                     android:orientation="vertical">
 
@@ -155,7 +155,7 @@
                             android:layout_height="31dp"
                             android:layout_gravity="center"
                             android:layout_marginLeft="73dp"
-                            android:background="@drawable/green_border_radious_btn"
+                            android:background="@drawable/green_border_radius_btn"
                             android:fontFamily="@font/noto_sans"
                             android:minWidth="0dp"
                             android:minHeight="0dp"
@@ -170,7 +170,7 @@
                             android:layout_height="31dp"
                             android:layout_gravity="center"
                             android:layout_marginLeft="18dp"
-                            android:background="@drawable/green_radious_30dp_btn"
+                            android:background="@drawable/green_radius_30dp_btn"
                             android:fontFamily="@font/noto_sans"
                             android:minWidth="0dp"
                             android:minHeight="0dp"

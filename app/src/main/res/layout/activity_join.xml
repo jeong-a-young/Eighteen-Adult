@@ -16,48 +16,59 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="129dp"
             android:fontFamily="@font/noto_sans_bold"
             android:text="반가워요, 사용자1님!"
-            android:textSize="24sp"
-            android:layout_marginTop="129dp"
-            android:layout_marginLeft="32dp"/>
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="열여덟 어른은 보호 종료 아동과"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="32dp"
-            android:layout_marginLeft="32dp" />
+            android:fontFamily="@font/noto_sans"
+            android:text="열여덟 어른은 보호 종료 아동과"
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:fontFamily="@font/noto_sans"
             android:text="보호 종료 예정 아동에게"
-            android:layout_marginLeft="32dp" />
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:fontFamily="@font/noto_sans"
             android:text="다양한 서비스와 정보를 제공하는 앱입니다."
-            android:layout_marginLeft="32dp" />
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="현재 보호 종료 아동이시거나"
+            android:layout_marginLeft="32dp"
             android:layout_marginTop="32dp"
-            android:layout_marginLeft="32dp" />
+            android:fontFamily="@font/noto_sans"
+            android:text="현재 보호 종료 아동이시거나"
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:fontFamily="@font/noto_sans"
             android:text="보호 종료 예정 아동이신가요?"
-            android:layout_marginLeft="32dp" />
+            android:textColor="#ffffff" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -70,7 +81,8 @@
                 android:id="@+id/button"
                 android:layout_width="364dp"
                 android:layout_height="58dp"
-                android:background="@drawable/green_radious_opacity_btn"
+                android:background="@drawable/green_radius_opacity_btn"
+                android:fontFamily="@font/noto_sans"
                 android:text="네, 맞습니다."
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF" />
@@ -79,11 +91,12 @@
                 android:id="@+id/button1"
                 android:layout_width="364dp"
                 android:layout_height="58dp"
-                android:background="@drawable/white_radious_opacity_btn"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/white_radius_opacity_btn"
+                android:fontFamily="@font/noto_sans"
                 android:text="아닙니다."
                 android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:layout_marginTop="21dp" />
+                android:textColor="#FFFFFF" />
         </LinearLayout>
 
     </LinearLayout>

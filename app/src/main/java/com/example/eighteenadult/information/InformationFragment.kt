@@ -5,16 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.eighteenadult.R
-import com.example.eighteenadult.home.Card
-import com.example.eighteenadult.home.CardAdapter
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.MapView
 import com.google.android.material.tabs.TabLayout
 
-class InformationFragment  : Fragment() {
+class InformationFragment : Fragment() {
 
     private var viewGroup: ViewGroup? = null
 
@@ -27,12 +21,15 @@ class InformationFragment  : Fragment() {
     ): View? {
         viewGroup = inflater.inflate(R.layout.fragment_information, container, false) as ViewGroup?
 
+        tabLayout = viewGroup?.findViewById(R.id.tabLayout)!!
+
         val fragmentTransaction = fragmentManager?.beginTransaction()
         val youthJobsFragment : Fragment = YouthJobsFragment()
         val informationSupportFragment : Fragment = InformationSupportFragment()
-        val shelterFragment : Fragment = ShelterFragment
+        val shelterFragment : Fragment = ShelterFragment()
+
         // 최초로 나타날 Fragment 세팅
-        fragmentTransaction?.add(R.id.fl_information, cambodiaFragment)?.commit()
+        fragmentTransaction?.add(R.id.fl_information, youthJobsFragment)?.commit()
 
         // TabLayout 선택 이벤트 리스너
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
@@ -42,15 +39,20 @@ class InformationFragment  : Fragment() {
                 val newFragmentTransaction = fragmentManager?.beginTransaction()
                 // 선택된 Tab의 position 값을 받아와서 해당 Tab에 맞는 Fragment를 띄워줌
                 when(tab?.position) {
-                    // Cambodia 선택 시
                     // replace: 원래 있던 Fragment를 지우고 새 Fragment로 교체
+                    // 보호시설 선택 시
                     0 -> {
-                        newFragmentTransaction?.replace(R.id.framelayout, cambodiaFragment)
+                        newFragmentTransaction?.replace(R.id.fl_information, youthJobsFragment)
                         newFragmentTransaction?.commit()
                     }
-                    // Vietnam 선택 시
+                    // 청년일자리 선택 시
                     1 -> {
-                        newFragmentTransaction?.replace(R.id.framelayout, vietnamFragment)
+                        newFragmentTransaction?.replace(R.id.fl_information, informationSupportFragment)
+                        newFragmentTransaction?.commit()
+                    }
+                    // 정보 지원 선택 시
+                    2 -> {
+                        newFragmentTransaction?.replace(R.id.fl_information, shelterFragment)
                         newFragmentTransaction?.commit()
                     }
                 }

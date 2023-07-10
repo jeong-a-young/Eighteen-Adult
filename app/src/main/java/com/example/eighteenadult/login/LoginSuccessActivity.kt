@@ -1,11 +1,12 @@
-package com.example.eighteenadult
+package com.example.eighteenadult.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.eighteenadult.R
 
-class LoginActivity : AppCompatActivity() {
+class LoginSuccessActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_login_success)
     }
 }
