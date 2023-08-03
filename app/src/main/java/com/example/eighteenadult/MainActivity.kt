@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import com.example.eighteenadult.home.HomeFragment
 import com.example.eighteenadult.information.InformationFragment
 import com.example.eighteenadult.map.MapFragment
-import com.example.eighteenadult.user.UserFragment
+import com.example.eighteenadult.entire.EntireFragment
 import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val homeFragment : Fragment = HomeFragment()
         val mapFragment : Fragment = MapFragment()
         val informationFragment : Fragment = InformationFragment()
-        val userFragment : Fragment = UserFragment()
+        val entireFragment : Fragment = EntireFragment()
 
         // 최초로 나타날 Fragment 세팅
         fragmentTransaction.add(R.id.frameLayout, homeFragment).commit()
@@ -50,9 +50,9 @@ class MainActivity : AppCompatActivity() {
                         newFragmentTransaction.replace(R.id.frameLayout, informationFragment)
                         newFragmentTransaction.commit()
                     }
-                    // UserFragment 선택 시
+                    // EntireFragment 선택 시
                     3 -> {
-                        newFragmentTransaction.replace(R.id.frameLayout, userFragment)
+                        newFragmentTransaction.replace(R.id.frameLayout, entireFragment)
                         newFragmentTransaction.commit()
                     }
                 }

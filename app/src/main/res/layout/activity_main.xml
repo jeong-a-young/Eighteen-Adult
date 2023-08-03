@@ -64,8 +64,8 @@
                     android:id="@+id/tab_more"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:icon="@drawable/main_icon_user"
-                    android:text="내 정보" />
+                    android:icon="@drawable/main_icon_entire"
+                    android:text="전체" />
 
             </com.google.android.material.tabs.TabLayout>
         </FrameLayout>
