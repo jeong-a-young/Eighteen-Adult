@@ -178,6 +178,7 @@
                             android:stateListAnimator="@null"
                             android:textColor="#FFFFFF"
                             android:textSize="14sp" />
+
                     </LinearLayout>
                 </LinearLayout>
             </FrameLayout>
