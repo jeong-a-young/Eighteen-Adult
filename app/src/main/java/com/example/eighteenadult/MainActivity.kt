@@ -1,13 +1,15 @@
 package com.example.eighteenadult
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+import com.example.eighteenadult.entire.EntireFragment
 import com.example.eighteenadult.home.HomeFragment
 import com.example.eighteenadult.information.InformationFragment
 import com.example.eighteenadult.map.MapFragment
-import com.example.eighteenadult.entire.EntireFragment
 import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
@@ -66,5 +68,13 @@ class MainActivity : AppCompatActivity() {
             override fun onTabReselected(tab: TabLayout.Tab?) {
             }
         })
+    }
+
+    fun replaceFragment(fragment: Fragment?) {
+        val fragmentManager: FragmentManager = supportFragmentManager
+        val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
+        if (fragment != null) {
+            fragmentTransaction.replace(R.id.frameLayout, fragment).commit()
+        }
     }
 }

@@ -81,7 +81,8 @@
                 android:background="@drawable/green_radius_15dp_btn"
                 android:text="공유하기"
                 android:textColor="#FFFFFF"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp" />
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

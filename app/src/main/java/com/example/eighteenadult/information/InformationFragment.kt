@@ -1,10 +1,13 @@
 package com.example.eighteenadult.information
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.fragment.app.Fragment
+import com.example.eighteenadult.MainActivity
 import com.example.eighteenadult.R
 import com.google.android.material.tabs.TabLayout
 
@@ -12,7 +15,26 @@ class InformationFragment : Fragment() {
 
     private var viewGroup: ViewGroup? = null
 
+    lateinit var iv_detail_image : ImageView
+    lateinit var tv_detail_title : TextView
+    lateinit var tv_detail_subtitle : TextView
+
     lateinit var tabLayout : TabLayout
+
+    fun newInstance(resId: Int): InformationFragment? {
+        val informationFragment = InformationFragment()
+        val bundle = Bundle()
+        bundle.putInt(Int::class.java.name, resId)
+        informationFragment.arguments = bundle
+        return informationFragment
+    }
+
+    protected var res = 0
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        res = requireArguments().getInt(Int::class.java.name)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -21,6 +43,17 @@ class InformationFragment : Fragment() {
     ): View? {
         viewGroup = inflater.inflate(R.layout.fragment_information, container, false) as ViewGroup?
 
+        // 상단 디테일 클릭 시 화면 전환
+        iv_detail_image = viewGroup?.findViewById(R.id.iv_detail_image)!!
+        tv_detail_title = viewGroup?.findViewById(R.id.tv_detail_title)!!
+        tv_detail_subtitle = viewGroup?.findViewById(R.id.tv_detail_subtitle)!!
+
+
+        iv_detail_image.setOnClickListener {
+            MainActivity().replace(CoffeeFragment.newInstance(res));
+        }
+
+        // 하단 탭 메뉴 구현
         tabLayout = viewGroup?.findViewById(R.id.tabLayout)!!
 
         val fragmentTransaction = fragmentManager?.beginTransaction()
