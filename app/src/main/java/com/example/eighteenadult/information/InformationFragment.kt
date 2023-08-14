@@ -21,21 +21,6 @@ class InformationFragment : Fragment() {
 
     lateinit var tabLayout : TabLayout
 
-    fun newInstance(resId: Int): InformationFragment? {
-        val informationFragment = InformationFragment()
-        val bundle = Bundle()
-        bundle.putInt(Int::class.java.name, resId)
-        informationFragment.arguments = bundle
-        return informationFragment
-    }
-
-    protected var res = 0
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        res = requireArguments().getInt(Int::class.java.name)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -48,9 +33,9 @@ class InformationFragment : Fragment() {
         tv_detail_title = viewGroup?.findViewById(R.id.tv_detail_title)!!
         tv_detail_subtitle = viewGroup?.findViewById(R.id.tv_detail_subtitle)!!
 
-
         iv_detail_image.setOnClickListener {
-            MainActivity().replace(CoffeeFragment.newInstance(res));
+            val mainActivity = (activity as MainActivity)
+            mainActivity.changeFragment(3)
         }
 
         // 하단 탭 메뉴 구현

@@ -28,7 +28,7 @@
                     android:src="@drawable/information_detail_image_overlay" />
 
                 <ImageView
-                    android:id="@+id/imageView15"
+                    android:id="@+id/btn_back"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:src="@drawable/icon_back_white"

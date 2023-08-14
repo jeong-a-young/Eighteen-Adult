@@ -4,12 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
+import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.eighteenadult.MainActivity
 import com.example.eighteenadult.R
-import com.example.eighteenadult.map.MapFragment
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.MapView
@@ -17,13 +18,14 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 
-
 class HomeFragment : Fragment(), OnMapReadyCallback {
 
     private var viewGroup: ViewGroup? = null
 
     private lateinit var googleMap : GoogleMap
     private lateinit var mapView : MapView
+
+    lateinit var fl_map : FrameLayout
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,6 +35,12 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
         viewGroup = inflater.inflate(R.layout.fragment_home, container, false) as ViewGroup?
 
         // 지도
+        fl_map = viewGroup?.findViewById(R.id.fl_map)!!
+        fl_map.setOnClickListener {
+            val mainActivity = (activity as MainActivity)
+            mainActivity.changeFragment(1)
+        }
+
         mapView = viewGroup?.findViewById(R.id.mv_home)!!
         mapView.onCreate(savedInstanceState)
         mapView.getMapAsync(this)

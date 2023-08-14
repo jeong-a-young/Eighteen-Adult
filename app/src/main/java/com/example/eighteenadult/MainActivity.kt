@@ -4,10 +4,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
 import com.example.eighteenadult.entire.EntireFragment
 import com.example.eighteenadult.home.HomeFragment
+import com.example.eighteenadult.information.InformationDetailFragment
 import com.example.eighteenadult.information.InformationFragment
 import com.example.eighteenadult.map.MapFragment
 import com.google.android.material.tabs.TabLayout
@@ -70,11 +69,15 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    fun replaceFragment(fragment: Fragment?) {
-        val fragmentManager: FragmentManager = supportFragmentManager
-        val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
-        if (fragment != null) {
-            fragmentTransaction.replace(R.id.frameLayout, fragment).commit()
+    fun changeFragment(index: Int) {
+        val mapFragment : Fragment = MapFragment()
+        val informationFragment : Fragment = InformationFragment()
+        val informationDetailFragment : Fragment = InformationDetailFragment()
+
+        when (index) {
+            1 -> supportFragmentManager.beginTransaction().replace(R.id.frameLayout, mapFragment).commit()
+            2 -> supportFragmentManager.beginTransaction().replace(R.id.frameLayout, informationFragment).commit()
+            3 -> supportFragmentManager.beginTransaction().replace(R.id.frameLayout, informationDetailFragment).commit()
         }
     }
 }

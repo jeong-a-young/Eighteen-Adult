@@ -33,7 +33,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/entire_icon_search"
-                android:layout_marginLeft="250dp"
+                android:layout_marginLeft="230dp"
                 android:layout_marginRight="15dp" />
 
             <ImageView
