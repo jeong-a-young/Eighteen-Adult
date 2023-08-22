@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
+import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,8 +25,9 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
 
     private lateinit var googleMap : GoogleMap
     private lateinit var mapView : MapView
-
     lateinit var fl_map : FrameLayout
+
+    lateinit var iv_information : ImageView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -44,6 +46,13 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
         mapView = viewGroup?.findViewById(R.id.mv_home)!!
         mapView.onCreate(savedInstanceState)
         mapView.getMapAsync(this)
+
+        // 정보
+        iv_information = viewGroup?.findViewById(R.id.iv_information)!!
+        iv_information.setOnClickListener {
+            val mainActivity = (activity as MainActivity)
+            mainActivity.changeFragment(2)
+        }
 
         // 카드
         val recyclerView: RecyclerView? = viewGroup?.findViewById(R.id.recyclerView)
