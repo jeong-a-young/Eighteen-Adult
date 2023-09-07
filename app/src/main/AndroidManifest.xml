@@ -15,6 +15,18 @@
         android:theme="@style/Theme.EighteenAdult"
         tools:targetApi="31">
         <activity
+            android:name=".AgencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EntireActivity"
+            android:exported="false" />
+        <activity
+            android:name=".information.InformationDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".information.InformationActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginMobileCarrierActivity"
             android:exported="false" />
         <activity

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".information.InformationDetailFragment">
+    tools:context=".information.InformationDetailActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                     android:src="@drawable/information_detail_image_overlay" />
 
                 <ImageView
-                    android:id="@+id/btn_back"
+                    android:id="@+id/iv_back"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:src="@drawable/icon_back_white"
@@ -85,4 +85,4 @@
                 android:layout_marginBottom="25dp" />
         </LinearLayout>
     </ScrollView>
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
