@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/join_image_background" >
+        android:background="#FFFFFF" >
 
         <TextView
             android:id="@+id/textView6"
@@ -19,9 +19,19 @@
             android:layout_marginLeft="32dp"
             android:layout_marginTop="129dp"
             android:fontFamily="@font/noto_sans_bold"
-            android:text="보호 종료 확인서를 준비해주세요"
-            android:textColor="#ffffff"
-            android:textSize="24sp" />
+            android:text="보호 종료 확인서를"
+            android:textColor="#333333"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:text="준비해주세요"
+            android:textColor="#333333"
+            android:textSize="40sp" />
 
         <TextView
             android:id="@+id/textView9"
@@ -31,7 +41,8 @@
             android:layout_marginTop="32dp"
             android:fontFamily="@font/noto_sans"
             android:text="보호 종료 확인서를 준비해주세요."
-            android:textColor="#ffffff" />
+            android:textColor="#333333"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView10"
@@ -39,18 +50,19 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
             android:fontFamily="@font/noto_sans"
-            android:text="사진 파일과 이미지 촬영 전부 괜찮습니다."
-            android:textColor="#ffffff" />
+            android:text="사진 파일과 이미지 촬영 전부 괜찮아요."
+            android:textColor="#333333"
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginTop="208dp" >
+            android:layout_marginTop="101dp" >
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_submit"
                 android:layout_width="364dp"
                 android:layout_height="58dp"
                 android:background="@drawable/green_radius_opacity_btn"

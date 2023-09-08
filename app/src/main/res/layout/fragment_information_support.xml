@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="396dp"
+    android:layout_height="256dp"
     android:background="#ffffff"
     tools:context=".information.InformationSupportFragment">
 
@@ -14,17 +14,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="27dp"
-            android:layout_marginBottom="22dp">
+            android:layout_marginBottom="22dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/noto_sans_bold"
-                android:text="공익활동"
+                android:text="일자리 지원"
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
@@ -32,9 +32,9 @@
                 android:id="@+id/imageView28"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
+                android:layout_gravity="center"
                 android:layout_marginLeft="257dp"
-                android:src="@drawable/youth_job_arrow_right_black"
-                android:layout_gravity="center" />
+                android:src="@drawable/youth_job_arrow_right_black" />
         </LinearLayout>
 
         <LinearLayout
@@ -122,72 +122,5 @@
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="34dp"
-            android:layout_marginLeft="32dp" >
-
-            <TextView
-                android:id="@+id/textView36"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans_bold"
-                android:text="공익활동"
-                android:textColor="#000000"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/imageView17"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/youth_job_arrow_right_black"
-                android:layout_marginLeft="257dp"
-                android:layout_gravity="center" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="34dp"
-            android:layout_marginLeft="32dp" >
-
-            <ImageView
-                android:id="@+id/imageView16"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="1dp"
-                android:src="@drawable/youth_jobs_image_3" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_marginLeft="22dp"
-                android:gravity="center" >
-
-                <TextView
-                    android:id="@+id/textView34"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/noto_sans"
-                    android:text="벅스나눔 챌린지"
-                    android:textColor="#a6a6a6"
-                    android:textSize="12sp"
-                    android:layout_marginBottom="2dp" />
-
-                <TextView
-                    android:id="@+id/textView35"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/noto_sans"
-                    android:text="음악으로 나누는 착한 나눔"
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-            </LinearLayout>
-        </LinearLayout>
     </LinearLayout>
 </FrameLayout>

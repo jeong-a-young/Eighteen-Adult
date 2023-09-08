@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="13dp"
                 android:fontFamily="@font/noto_sans"
-                android:text="01031236181"
+                android:text="01012345678"
                 android:textColor="#000000"
                 android:textSize="24sp" />
 
@@ -175,7 +175,7 @@
                         android:id="@+id/textView62"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="050615"
+                        android:text="030412"
                         android:textColor="#000000"
                         android:textSize="24sp"
                         android:layout_marginTop="13dp" />
@@ -297,7 +297,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/noto_sans"
-                android:text="박하영"
+                android:text="김지영"
                 android:textColor="#000000"
                 android:textSize="24sp"
                 android:layout_marginTop="13dp" />
@@ -314,7 +314,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btn_finish"
+            android:id="@+id/btn_no"
             android:layout_width="match_parent"
             android:layout_height="63dp"
             android:background="@drawable/green_radius_15dp_btn"

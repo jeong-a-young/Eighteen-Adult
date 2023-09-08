@@ -1,16 +1,18 @@
 package com.example.eighteenadult.home
 
+import android.app.Activity
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.eighteenadult.R
+import com.example.eighteenadult.information.InformationActivity
 
-class CardAdapter (private val context: FragmentActivity?, private val dataSet: List<Card>) : RecyclerView.Adapter<CardAdapter.ViewHolder>() {
+class CardAdapter (private val context : Activity, private val dataSet : List<Card>) : RecyclerView.Adapter<CardAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val cl_card : ConstraintLayout
@@ -36,13 +38,9 @@ class CardAdapter (private val context: FragmentActivity?, private val dataSet: 
         viewHolder.et_title.text = dataSet[position].title
         viewHolder.iv_ico.setImageResource(dataSet[position].icon)
 
-        when(dataSet[position].title) {
-            "일자리 정보" -> {
-                viewHolder.cl_card.setOnClickListener {
-//                    val intent = Intent(context, PrivacyPolicyActivity::class.java)
-//                    context?.startActivity(intent)
-                }
-            }
+        viewHolder.cl_card.setOnClickListener {
+            val intent = Intent(context, InformationActivity::class.java)
+            context.startActivity(intent)
         }
     }
 

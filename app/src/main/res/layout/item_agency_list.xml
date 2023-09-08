@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="123dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:text="용인푸른꿈남자청소년쉼터"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="38dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="경기도 용인시 수지구 풍덕천동"
+                        android:textColor="#8F8F8F"
+                        android:layout_marginLeft="38dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_address"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/agency_icon_arrow_bottom_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="38dp">
+
+                    <ImageView
+                        android:id="@+id/iv_call"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/agency_icon_call" />
+
+                    <ImageView
+                        android:id="@+id/iv_bookmark"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/agency_icon_bookmark_off" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right" >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginRight="30dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="76dp"
+                        android:layout_height="76dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/agency_image_1" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_view"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:background="#cccccc"
+            android:backgroundTint="#cccccc"
+            android:layout_marginRight="24sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

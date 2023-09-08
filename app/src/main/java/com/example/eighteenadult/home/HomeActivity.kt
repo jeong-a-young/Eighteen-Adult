@@ -1,22 +1,25 @@
-package com.example.eighteenadult
+package com.example.eighteenadult.home
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.eighteenadult.R
 import com.example.eighteenadult.agency.AgencyActivity
 import com.example.eighteenadult.entire.EntireActivity
-import com.example.eighteenadult.home.Card
-import com.example.eighteenadult.home.CardAdapter
 import com.example.eighteenadult.information.InformationActivity
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
     lateinit var iv_information : ImageView
+    lateinit var btn_information_1 : Button
+    lateinit var btn_information_2 : Button
     lateinit var iv_agency : ImageView
     lateinit var ll_entire : LinearLayout
     lateinit var tv_entire_subtitle : TextView
@@ -31,6 +34,18 @@ class MainActivity : AppCompatActivity() {
         iv_information.setOnClickListener {
             val intent = Intent(this, InformationActivity::class.java)
             this.startActivity(intent)
+        }
+
+        btn_information_1 = findViewById(R.id.btn_information_1)
+        btn_information_1.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.childfund.or.kr/main.do"))
+            startActivity(intent)
+        }
+
+        btn_information_2 = findViewById(R.id.btn_information_2)
+        btn_information_2.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://brotherskeeper.co.kr/"))
+            startActivity(intent)
         }
 
         // 기관

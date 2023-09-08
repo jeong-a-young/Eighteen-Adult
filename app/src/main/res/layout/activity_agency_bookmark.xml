@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".agency.AgencyActivity">
+    tools:context=".agency.AgencyBookmarkActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -39,17 +39,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:fontFamily="@font/noto_sans_bold"
-                    android:text="기관"
+                    android:text="북마크"
                     android:textAlignment="center"
                     android:textColor="#000000"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:id="@+id/iv_bookmark"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_marginRight="30dp"
-                    android:src="@drawable/agency_icon_bookmark_on" />
+                    android:textSize="20sp"
+                    android:layout_marginRight="60dp" />
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView

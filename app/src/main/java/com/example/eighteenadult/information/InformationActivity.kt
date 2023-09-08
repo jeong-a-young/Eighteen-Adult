@@ -7,7 +7,7 @@ import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.example.eighteenadult.MainActivity
+import com.example.eighteenadult.home.HomeActivity
 import com.example.eighteenadult.R
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.Tab
@@ -29,7 +29,7 @@ class InformationActivity : AppCompatActivity() {
         // 뒤로 가기
         iv_back = findViewById(R.id.iv_back)
         iv_back.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             this.startActivity(intent)
         }
 
