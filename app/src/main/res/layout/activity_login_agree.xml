@@ -46,13 +46,15 @@
                 android:includeFontPadding="false"
                 android:text="[필수] 본인 확인 서비스 약관 및 동의사항"
                 android:textColor="#000000"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:layout_marginLeft="11dp" />
 
             <ImageView
                 android:id="@+id/imageView24"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                app:srcCompat="@drawable/login_icon_see_more" />
+                android:src="@drawable/login_icon_see_more"
+                android:layout_marginLeft="25dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -76,13 +78,15 @@
                 android:includeFontPadding="false"
                 android:text="[필수] 열여덟 어른 회원 약관 및 동의사항"
                 android:textColor="#000000"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:layout_marginLeft="11dp" />
 
             <ImageView
                 android:id="@+id/imageView22"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                app:srcCompat="@drawable/login_icon_see_more" />
+                android:src="@drawable/login_icon_see_more"
+                android:layout_marginLeft="24dp" />
         </LinearLayout>
 
         <Button

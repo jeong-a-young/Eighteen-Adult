@@ -16,34 +16,24 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="129dp"
+            android:gravity="center"
+            android:layout_marginTop="131dp"
             android:fontFamily="@font/noto_sans_kr_bold"
             android:includeFontPadding="false"
             android:text="반가워요, 사용자1님!"
             android:textColor="#333333"
-            android:textSize="40sp" />
+            android:textSize="38sp" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="38dp"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/noto_sans_kr_regular"
             android:includeFontPadding="false"
-            android:text="그렇다면 보호 종료 확인서를"
-            android:textColor="#333333"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:fontFamily="@font/noto_sans_kr_regular"
-            android:includeFontPadding="false"
-            android:text="소지하고 계신가요?"
+            android:text="그렇다면 보호 종료 확인서를\n소지하고 계신가요?"
+            android:lineHeight="22dp"
             android:textColor="#333333"
             android:textSize="20sp" />
 
@@ -52,7 +42,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginTop="161dp" >
+            android:layout_marginTop="160dp" >
 
             <Button
                 android:id="@+id/btn_yes"

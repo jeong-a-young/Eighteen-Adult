@@ -17,46 +17,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="160dp"
             android:fontFamily="@font/noto_sans_kr_bold"
             android:includeFontPadding="false"
             android:text="감사합니다!"
             android:textColor="#333333"
-            android:textSize="40sp" />
+            android:textSize="37sp" />
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="match_parent"
+            android:layout_width="386dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="26dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="23dp"
             android:fontFamily="@font/noto_sans_kr_regular"
             android:includeFontPadding="false"
-            android:text="사용자1님께서 제공해주신 정보를 바탕으로"
+            android:lineHeight="22dp"
+            android:text="사용자1님께서 제공해주신 정보를 바탕으로\n조금 더 유용하고 필요한 정보를\n제공해드리겠습니다."
             android:textColor="#333333"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="26dp"
-            android:fontFamily="@font/noto_sans_kr_regular"
-            android:includeFontPadding="false"
-            android:text="조금 더 유용하고 필요한 정보를"
-            android:textColor="#333333"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="26dp"
-            android:fontFamily="@font/noto_sans_kr_regular"
-            android:includeFontPadding="false"
-            android:text="제공해드리겠습니다."
-            android:textColor="#333333"
-            android:textSize="20sp" />
+            android:textSize="19sp" />
 
         <LinearLayout
             android:layout_width="match_parent"

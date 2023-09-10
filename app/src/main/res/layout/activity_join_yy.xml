@@ -20,18 +20,8 @@
             android:layout_marginTop="129dp"
             android:fontFamily="@font/noto_sans_kr_bold"
             android:includeFontPadding="false"
-            android:text="보호 종료 확인서를"
-            android:textColor="#333333"
-            android:textSize="40sp" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:fontFamily="@font/noto_sans_kr_bold"
-            android:includeFontPadding="false"
-            android:text="준비해주세요"
+            android:text="보호 종료 확인서를\n준비해주세요"
+            android:lineHeight="50dp"
             android:textColor="#333333"
             android:textSize="40sp" />
 
