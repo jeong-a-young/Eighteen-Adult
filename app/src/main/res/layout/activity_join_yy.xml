@@ -18,7 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="129dp"
-            android:fontFamily="@font/noto_sans_bold"
+            android:fontFamily="@font/noto_sans_kr_bold"
+            android:includeFontPadding="false"
             android:text="보호 종료 확인서를"
             android:textColor="#333333"
             android:textSize="40sp" />
@@ -28,7 +29,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
-            android:fontFamily="@font/noto_sans_bold"
+            android:fontFamily="@font/noto_sans_kr_bold"
+            android:includeFontPadding="false"
             android:text="준비해주세요"
             android:textColor="#333333"
             android:textSize="40sp" />
@@ -39,7 +41,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="32dp"
-            android:fontFamily="@font/noto_sans"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:includeFontPadding="false"
             android:text="보호 종료 확인서를 준비해주세요."
             android:textColor="#333333"
             android:textSize="20sp" />
@@ -49,7 +52,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
-            android:fontFamily="@font/noto_sans"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:includeFontPadding="false"
             android:text="사진 파일과 이미지 촬영 전부 괜찮아요."
             android:textColor="#333333"
             android:textSize="20sp" />
@@ -66,7 +70,8 @@
                 android:layout_width="364dp"
                 android:layout_height="58dp"
                 android:background="@drawable/green_radius_opacity_btn"
-                android:fontFamily="@font/noto_sans"
+                android:fontFamily="@font/noto_sans_kr_medium"
+                android:includeFontPadding="false"
                 android:text="보호 종료 확인서 제출하기"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF" />

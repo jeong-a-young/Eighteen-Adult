@@ -21,9 +21,11 @@
 
             <TextView
                 android:id="@+id/textView41"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans_bold"
+                android:layout_weight="1"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:includeFontPadding="false"
                 android:text="일자리 지원"
                 android:textColor="#000000"
                 android:textSize="20sp" />
@@ -32,7 +34,7 @@
                 android:id="@+id/imageView28"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_marginLeft="257dp"
+                android:layout_marginRight="32dp"
                 android:src="@drawable/youth_job_arrow_right_black"
                 android:layout_gravity="center" />
         </LinearLayout>
@@ -64,7 +66,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
-                    android:fontFamily="@font/noto_sans"
+                    android:fontFamily="@font/noto_sans_kr_light"
+                    android:includeFontPadding="false"
                     android:text="자립준비청년 맞춤형 프로그램"
                     android:textColor="#a6a6a6"
                     android:textSize="12sp" />
@@ -73,7 +76,8 @@
                     android:id="@+id/textView40"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/noto_sans"
+                    android:fontFamily="@font/noto_sans_kr_medium"
+                    android:includeFontPadding="false"
                     android:text="함께하는 자립"
                     android:textColor="#000000"
                     android:textSize="18sp" />
@@ -106,7 +110,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
-                    android:fontFamily="@font/noto_sans"
+                    android:fontFamily="@font/noto_sans_kr_light"
+                    android:includeFontPadding="false"
                     android:text="청년의 진로와 자립을 고민하는,"
                     android:textColor="#a6a6a6"
                     android:textSize="12sp" />
@@ -115,7 +120,8 @@
                     android:id="@+id/textView38"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/noto_sans"
+                    android:fontFamily="@font/noto_sans_kr_medium"
+                    android:includeFontPadding="false"
                     android:text="일하는 학교"
                     android:textColor="#000000"
                     android:textSize="18sp" />
@@ -133,7 +139,9 @@
                 android:id="@+id/textView36"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans_bold"
+                android:layout_weight="1"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:includeFontPadding="false"
                 android:text="공익활동"
                 android:textColor="#000000"
                 android:textSize="20sp" />
@@ -143,7 +151,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/youth_job_arrow_right_black"
-                android:layout_marginLeft="257dp"
+                android:layout_marginRight="32dp"
                 android:layout_gravity="center" />
         </LinearLayout>
 
@@ -173,7 +181,8 @@
                     android:id="@+id/textView34"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/noto_sans"
+                    android:fontFamily="@font/noto_sans_kr_light"
+                    android:includeFontPadding="false"
                     android:text="벅스나눔 챌린지"
                     android:textColor="#a6a6a6"
                     android:textSize="12sp"
@@ -183,7 +192,8 @@
                     android:id="@+id/textView35"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/noto_sans"
+                    android:fontFamily="@font/noto_sans_kr_medium"
+                    android:includeFontPadding="false"
                     android:text="음악으로 나누는 착한 나눔"
                     android:textColor="#000000"
                     android:textSize="18sp" />

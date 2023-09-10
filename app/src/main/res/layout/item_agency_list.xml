@@ -25,7 +25,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
-                    android:fontFamily="@font/noto_sans_bold"
+                    android:fontFamily="@font/noto_sans_kr_medium"
+                    android:includeFontPadding="false"
                     android:text="용인푸른꿈남자청소년쉼터"
                     android:textColor="#000000"
                     android:textSize="22sp"
@@ -40,9 +41,11 @@
                         android:id="@+id/tv_address"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="38dp"
+                        android:fontFamily="@font/noto_sans_kr_light"
+                        android:includeFontPadding="false"
                         android:text="경기도 용인시 수지구 풍덕천동"
-                        android:textColor="#8F8F8F"
-                        android:layout_marginLeft="38dp" />
+                        android:textColor="#8F8F8F" />
 
                     <ImageView
                         android:id="@+id/iv_address"

@@ -29,21 +29,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
-            android:fontFamily="@font/noto_sans_bold"
+            android:fontFamily="@font/noto_sans_kr_bold"
+            android:includeFontPadding="false"
             android:text="본인인증 완료"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="20sp"
+            android:textSize="32sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView42"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/noto_sans"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:includeFontPadding="false"
             android:text="지금 열여덟 어른과 함께\n자립을 준비하러 가요!"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

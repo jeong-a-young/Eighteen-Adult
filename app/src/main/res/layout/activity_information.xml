@@ -31,7 +31,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:layout_marginBottom="30dp"
-                android:fontFamily="@font/noto_sans_bold"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:includeFontPadding="false"
                 android:text="정보"
                 android:textColor="#202020"
                 android:textSize="24sp" />
@@ -50,7 +51,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:layout_marginBottom="12dp"
-                android:fontFamily="@font/noto_sans_bold"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:includeFontPadding="false"
                 android:text="스무 살 함께 서기"
                 android:textColor="#202020"
                 android:textSize="18sp" />
@@ -62,6 +64,8 @@
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="72dp"
                 android:layout_marginBottom="34dp"
+                android:fontFamily="@font/noto_sans_kr_regular"
+                android:includeFontPadding="false"
                 android:text="초록우산어린이재단의 [자립준비청년(보호종료아동) 지원 캠페인] 스무 살 함께 서기는... 더보기 "
                 android:textColor="#A6A6A6" />
 
