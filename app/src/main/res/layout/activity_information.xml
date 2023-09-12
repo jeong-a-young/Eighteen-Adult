@@ -22,7 +22,7 @@
                 android:layout_height="28dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="27dp"
-                android:layout_marginBottom="29dp"
+                android:layout_marginBottom="24dp"
                 android:src="@drawable/icon_back_black" />
 
             <TextView
@@ -30,16 +30,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="15dp"
                 android:fontFamily="@font/noto_sans_kr_bold"
                 android:includeFontPadding="false"
                 android:text="정보"
                 android:textColor="#202020"
-                android:textSize="24sp" />
+                android:textSize="32sp" />
 
             <ImageView
                 android:id="@+id/iv_detail_image"
-                android:layout_width="364dp"
+                android:layout_width="344dp"
                 android:layout_height="182dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
@@ -55,19 +55,21 @@
                 android:includeFontPadding="false"
                 android:text="스무 살 함께 서기"
                 android:textColor="#202020"
-                android:textSize="18sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/tv_detail_subtitle"
-                android:layout_width="match_parent"
+                android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="72dp"
                 android:layout_marginBottom="34dp"
                 android:fontFamily="@font/noto_sans_kr_regular"
                 android:includeFontPadding="false"
+                android:lineHeight="18dp"
                 android:text="초록우산어린이재단의 [자립준비청년(보호종료아동) 지원 캠페인] 스무 살 함께 서기는... 더보기 "
-                android:textColor="#A6A6A6" />
+                android:textColor="#A6A6A6"
+                android:textSize="15sp" />
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabLayout"
