@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cl_card"
-    android:layout_width="190dp"
+    android:layout_width="160dp"
     android:layout_height="140dp"
     android:background="@drawable/white_radius_layout"
     android:layout_marginLeft="20dp">
