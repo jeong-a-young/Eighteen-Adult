@@ -17,24 +17,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginTop="129dp"
+            android:layout_marginTop="149dp"
             android:fontFamily="@font/noto_sans_kr_bold"
             android:includeFontPadding="false"
             android:text="반가워요, 사용자1님!"
             android:textColor="#333333"
-            android:textSize="38sp" />
+            android:textSize="37sp" />
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
+            android:layout_gravity="center"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/noto_sans_kr_regular"
             android:includeFontPadding="false"
             android:text="그렇군요!\n그렇다면 일자리 지원이나 급여 지원 정보가\n필요하신가요?\n\n사용자1님께 조금 더 유용한 정보를\n제공드리기 위함입니다."
             android:textColor="#333333"
-            android:textSize="19sp"
+            android:textSize="18sp"
             android:lineHeight="22dp"/>
 
         <LinearLayout
@@ -46,7 +46,7 @@
 
             <Button
                 android:id="@+id/btn_yes"
-                android:layout_width="364dp"
+                android:layout_width="344dp"
                 android:layout_height="58dp"
                 android:background="@drawable/green_radius_opacity_btn"
                 android:fontFamily="@font/noto_sans_kr_medium"
@@ -58,7 +58,7 @@
 
             <Button
                 android:id="@+id/btn_no"
-                android:layout_width="364dp"
+                android:layout_width="344dp"
                 android:layout_height="58dp"
                 android:layout_marginTop="21dp"
                 android:background="@drawable/white_radius_opacity_btn"

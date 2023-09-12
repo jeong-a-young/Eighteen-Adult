@@ -17,12 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginTop="131dp"
+            android:layout_marginTop="151dp"
             android:fontFamily="@font/noto_sans_kr_bold"
             android:includeFontPadding="false"
             android:text="반가워요, 사용자1님!"
             android:textColor="#333333"
-            android:textSize="38sp" />
+            android:textSize="36sp" />
 
         <TextView
             android:id="@+id/textView9"
@@ -42,11 +42,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginTop="160dp" >
+            android:layout_marginTop="150dp" >
 
             <Button
                 android:id="@+id/btn_yes"
-                android:layout_width="364dp"
+                android:layout_width="344dp"
                 android:layout_height="58dp"
                 android:background="@drawable/green_radius_opacity_btn"
                 android:fontFamily="@font/noto_sans_kr_regular"
@@ -58,7 +58,7 @@
 
             <Button
                 android:id="@+id/btn_no"
-                android:layout_width="364dp"
+                android:layout_width="344dp"
                 android:layout_height="58dp"
                 android:layout_marginTop="21dp"
                 android:background="@drawable/white_radius_opacity_btn"

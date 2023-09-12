@@ -135,7 +135,7 @@
                     android:src="@drawable/login_icon_see_more"
                     android:layout_gravity="center"
                     android:layout_marginTop="9dp"
-                    android:layout_marginLeft="212dp"
+                    android:layout_marginLeft="202dp"
                     android:layout_marginRight="8dp" />
             </LinearLayout>
 

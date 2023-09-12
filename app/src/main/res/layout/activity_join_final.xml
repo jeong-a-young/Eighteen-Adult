@@ -9,15 +9,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FFFFFF"
         android:orientation="vertical"
-        android:background="#FFFFFF" >
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="160dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="190dp"
             android:fontFamily="@font/noto_sans_kr_bold"
             android:includeFontPadding="false"
             android:text="감사합니다!"
@@ -26,35 +28,29 @@
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="386dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
             android:layout_marginTop="23dp"
             android:fontFamily="@font/noto_sans_kr_regular"
             android:includeFontPadding="false"
             android:lineHeight="22dp"
             android:text="사용자1님께서 제공해주신 정보를 바탕으로\n조금 더 유용하고 필요한 정보를\n제공해드리겠습니다."
             android:textColor="#333333"
-            android:textSize="19sp" />
+            android:textSize="18sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginTop="119dp" >
-
-            <Button
-                android:id="@+id/btn_finish"
-                android:layout_width="364dp"
-                android:layout_height="58dp"
-                android:background="@drawable/green_radius_opacity_btn"
-                android:fontFamily="@font/noto_sans_kr_medium"
-                android:text="확인"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="344dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="119dp"
+            android:background="@drawable/green_radius_opacity_btn"
+            android:fontFamily="@font/noto_sans_kr_medium"
+            android:text="확인"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
     </LinearLayout>
 

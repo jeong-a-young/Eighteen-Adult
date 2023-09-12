@@ -12,60 +12,52 @@
         android:orientation="vertical"
         android:background="#FFFFFF" >
 
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="32dp"
+            app:srcCompat="@drawable/icon_back_black" />
+
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="129dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="105dp"
             android:fontFamily="@font/noto_sans_kr_bold"
             android:includeFontPadding="false"
             android:text="보호 종료 확인서를\n준비해주세요"
             android:lineHeight="50dp"
             android:textColor="#333333"
-            android:textSize="40sp" />
+            android:textSize="38sp" />
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"
             android:fontFamily="@font/noto_sans_kr_regular"
             android:includeFontPadding="false"
-            android:text="보호 종료 확인서를 준비해주세요."
+            android:text="보호 종료 확인서를 준비해주세요.\n사진 파일과 이미지 촬영 전부 괜찮아요."
+            android:lineHeight="20dp"
             android:textColor="#333333"
-            android:textSize="20sp" />
+            android:textSize="19sp" />
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:fontFamily="@font/noto_sans_kr_regular"
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_marginTop="101dp"
+            android:layout_gravity="center"
+            android:layout_width="344dp"
+            android:layout_height="58dp"
+            android:background="@drawable/green_radius_opacity_btn"
+            android:fontFamily="@font/noto_sans_kr_medium"
             android:includeFontPadding="false"
-            android:text="사진 파일과 이미지 촬영 전부 괜찮아요."
-            android:textColor="#333333"
-            android:textSize="20sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_marginTop="101dp" >
-
-            <Button
-                android:id="@+id/btn_submit"
-                android:layout_width="364dp"
-                android:layout_height="58dp"
-                android:background="@drawable/green_radius_opacity_btn"
-                android:fontFamily="@font/noto_sans_kr_medium"
-                android:includeFontPadding="false"
-                android:text="보호 종료 확인서 제출하기"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF" />
-        </LinearLayout>
+            android:text="보호 종료 확인서 제출하기"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
 
