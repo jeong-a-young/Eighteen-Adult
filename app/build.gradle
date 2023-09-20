@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.eighteenadult'
+    namespace 'com.stac.eighteenadult'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.eighteenadult"
+        applicationId "com.stac.eighteenadult"
         minSdk 24
         targetSdk 33
         versionCode 1
