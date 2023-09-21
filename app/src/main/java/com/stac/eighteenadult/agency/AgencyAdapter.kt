@@ -14,7 +14,7 @@ import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.stac.eighteenadult.R
+import com.example.eighteenadult.R
 
 class AgencyAdapter (private val context : Activity, private val dataSet : List<Agency>) : RecyclerView.Adapter<AgencyAdapter.ViewHolder>() {
 

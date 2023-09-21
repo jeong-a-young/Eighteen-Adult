@@ -18,58 +18,58 @@
         <meta-data android:name="android.max_aspect" android:value="2.1" />
 
         <activity
-            android:name=".agency.AgencyBookmarkActivity"
+            android:name="com.stac.eighteenadult.agency.AgencyBookmarkActivity"
             android:exported="false" />
         <activity
-            android:name=".agency.AgencyActivity"
+            android:name="com.stac.eighteenadult.agency.AgencyActivity"
             android:exported="false" />
         <activity
-            android:name=".entire.EntireActivity"
+            android:name="com.stac.eighteenadult.entire.EntireActivity"
             android:exported="false" />
         <activity
-            android:name=".information.InformationDetailActivity"
+            android:name="com.stac.eighteenadult.information.InformationDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".information.InformationActivity"
+            android:name="com.stac.eighteenadult.information.InformationActivity"
             android:exported="false" />
         <activity
-            android:name=".login.LoginMobileCarrierActivity"
+            android:name="com.stac.eighteenadult.login.LoginMobileCarrierActivity"
             android:exported="false" />
         <activity
-            android:name=".login.LoginAgreeActivity"
+            android:name="com.stac.eighteenadult.login.LoginAgreeActivity"
             android:exported="false" />
         <activity
-            android:name=".login.QuestionActivity"
+            android:name="com.stac.eighteenadult.login.QuestionActivity"
             android:exported="false" />
         <activity
-            android:name=".login.LoginSuccessActivity"
+            android:name="com.stac.eighteenadult.login.LoginSuccessActivity"
             android:exported="false" />
         <activity
-            android:name=".join.JoinFinalActivity"
+            android:name="com.stac.eighteenadult.join.JoinFinalActivity"
             android:exported="false" />
         <activity
-            android:name=".join.JoinYNActivity"
+            android:name="com.stac.eighteenadult.join.JoinYNActivity"
             android:exported="false" />
         <activity
-            android:name=".join.JoinYYActivity"
+            android:name="com.stac.eighteenadult.join.JoinYYActivity"
             android:exported="false" />
         <activity
-            android:name=".join.JoinNActivity"
+            android:name="com.stac.eighteenadult.join.JoinNActivity"
             android:exported="false" />
         <activity
-            android:name=".join.JoinYActivity"
+            android:name="com.stac.eighteenadult.join.JoinYActivity"
             android:exported="false" />
         <activity
-            android:name=".join.JoinActivity"
+            android:name="com.stac.eighteenadult.join.JoinActivity"
             android:exported="false" />
         <activity
-            android:name=".login.LoginActivity"
+            android:name="com.stac.eighteenadult.login.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".BeginningActivity"
+            android:name="com.stac.eighteenadult.BeginningActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name="com.stac.eighteenadult.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -79,7 +79,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".home.HomeActivity"
+            android:name="com.stac.eighteenadult.home.HomeActivity"
             android:exported="false" />
 
         <meta-data

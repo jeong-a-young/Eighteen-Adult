@@ -9,7 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
-import com.stac.eighteenadult.R
+import com.example.eighteenadult.R
 import com.stac.eighteenadult.information.InformationActivity
 
 class CardAdapter (private val context : Activity, private val dataSet : List<Card>) : RecyclerView.Adapter<CardAdapter.ViewHolder>() {

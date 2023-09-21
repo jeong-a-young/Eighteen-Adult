@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.stac.eighteenadult.R
+import com.example.eighteenadult.R
 
 class AgencyBookmarkActivity : AppCompatActivity() {
 

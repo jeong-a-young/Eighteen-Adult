@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="364dp"
     android:layout_height="140dp"
-    tools:context=".login.QuestionActivity"
+    tools:context="com.stac.eighteenadult.login.QuestionActivity"
     android:background="@drawable/white_radius_layout" >
 
     <LinearLayout

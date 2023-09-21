@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.stac.eighteenadult.R
+import com.example.eighteenadult.R
 import com.stac.eighteenadult.agency.AgencyActivity
 import com.stac.eighteenadult.entire.EntireActivity
 import com.stac.eighteenadult.information.InformationActivity
@@ -27,7 +27,7 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home)
 
         // 정보
         iv_information = findViewById(R.id.iv_information)

@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.stac.eighteenadult.R
+import com.example.eighteenadult.R
 
 class InformationSupportFragment : Fragment() {
 

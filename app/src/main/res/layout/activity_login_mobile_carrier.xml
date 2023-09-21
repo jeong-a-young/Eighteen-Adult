@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="364dp"
     android:layout_height="566dp"
-    tools:context=".login.LoginMobileCarrierActivity"
+    tools:context="com.stac.eighteenadult.login.LoginMobileCarrierActivity"
     android:background="@drawable/white_radius_layout" >
 
     <LinearLayout

@@ -5,7 +5,7 @@
     android:layout_width="402dp"
     android:layout_height="282dp"
     android:background="@drawable/white_radius_layout"
-    tools:context=".login.LoginAgreeActivity">
+    tools:context="com.stac.eighteenadult.login.LoginAgreeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.eighteenadult.R
 import com.stac.eighteenadult.home.HomeActivity
-import com.stac.eighteenadult.R
 
 class EntireActivity : AppCompatActivity() {
 

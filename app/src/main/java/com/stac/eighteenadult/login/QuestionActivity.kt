@@ -2,7 +2,7 @@ package com.stac.eighteenadult.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.stac.eighteenadult.R
+import com.example.eighteenadult.R
 
 class QuestionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

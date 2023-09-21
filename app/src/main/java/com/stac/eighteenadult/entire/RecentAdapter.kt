@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.stac.eighteenadult.R
+import com.example.eighteenadult.R
 
 class RecentAdapter (private val context : Activity, private val dataSet : List<Entire>) : RecyclerView.Adapter<RecentAdapter.ViewHolder>() {
 

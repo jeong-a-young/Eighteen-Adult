@@ -7,8 +7,8 @@ import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.example.eighteenadult.R
 import com.stac.eighteenadult.home.HomeActivity
-import com.stac.eighteenadult.R
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.Tab
 
