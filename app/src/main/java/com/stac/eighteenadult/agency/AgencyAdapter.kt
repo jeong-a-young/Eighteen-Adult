@@ -50,7 +50,8 @@ class AgencyAdapter (private val context : Activity, private val dataSet : List<
         viewHolder.tv_address.text = dataSet[position].address
 
         viewHolder.iv_call.setOnClickListener {
-            if (ContextCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            if (ContextCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE)
+                != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(context, arrayOf(Manifest.permission.CALL_PHONE), CALL_REQUEST_CODE)
             } else {
                 var intent = Intent(Intent.ACTION_CALL)
